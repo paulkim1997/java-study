@@ -25,7 +25,7 @@
 |12주차|미정| - |
 
 ### 정복할 문제집
-* [백준 단계별로 풀어보기] (https://www.acmicpc.net/step)
-* [Jinhan's Note] (https://www.acmicpc.net/group/workbook/list/9061) (그룹에 가입되어 있어야 합니다)
+* [백준 단계별로 풀어보기](https://www.acmicpc.net/step)
+* [Jinhan's Note](https://www.acmicpc.net/group/workbook/list/9061) (그룹에 가입되어 있어야 합니다)
 * [김민상님 문제집](https://github.com/tony9402/baekjoon)
 * [바킹독님 문제집](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook.md)
