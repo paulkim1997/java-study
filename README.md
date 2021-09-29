@@ -12,18 +12,18 @@
 ### 일정
 |**주차**|**과목**|**담당자(?)**|
 |----|----|----|
-|1주차|자료구조, 입출력| - |
-|2주차|정렬| - |
-|3주차|완전 탐색| - |
-|4주차|이분 탐색| - |
-|5주차|투 포인터| - |
-|6주차|그래프와 탐색| - |
-|7주차|DFS & BFS| - |
-|8주차|트리| - |
-|9주차|위상 정렬| - |
-|10주차|최단 경로| - |
-|11주차|동적 계획법| - |
-|12주차|구현 & 시뮬레이션| - |
+|1주차|자료구조, 입출력| [신준혁](https://github.com/jun-hk) |
+|2주차|정렬| [김성수](https://github.com/paulkim1997) |
+|3주차|완전 탐색| [서승길](https://github.com/SeunggilSeo) |
+|4주차|이분 탐색| [강하연](https://github.com/KangHayeonn) |
+|5주차|투 포인터| [오민영](https://github.com/MyJanuary) |
+|6주차|그래프와 탐색| [지연](https://github.com/yeon-log) |
+|7주차|DFS & BFS| [신준혁](https://github.com/jun-hk) |
+|8주차|트리| [김성수](https://github.com/paulkim1997) |
+|9주차|위상 정렬| [서승길](https://github.com/SeunggilSeo) |
+|10주차|최단 경로| [강하연](https://github.com/KangHayeonn) |
+|11주차|동적 계획법| [오민영](https://github.com/MyJanuary) |
+|12주차|구현 & 시뮬레이션| [지연](https://github.com/yeon-log) |
 
 위 일정대로 개념 공부 후, 문제에 적용하면서 풀어나가는 연습 진행
 
