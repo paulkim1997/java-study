@@ -1,21 +1,21 @@
 import java.util.Scanner;
 
-public class Main { // Å¬·¡½º ½ÃÀÛ
-    public static int[] stack; // µ¥ÀÌÅÍ¸¦ ´ãÀ» ½ºÅÃ ¼±¾ğ
+public class Main { // í´ë˜ìŠ¤ ì‹œì‘
+    public static int[] stack; // ë°ì´í„°ë¥¼ ë‹´ì„ ìŠ¤íƒ ì„ ì–¸
     public static int size = 0;
     
-	public static void main(String[] args) { // ¸ŞÀÎ Å¬·¡½º ½ÃÀÛ
+	public static void main(String[] args) { // ë©”ì¸ í´ë˜ìŠ¤ ì‹œì‘
 	    Scanner s = new Scanner(System.in);
 	    StringBuilder sb = new StringBuilder();
 	    
-		int cnt = s.nextInt(); // µ¥ÀÌÅÍÀÇ ÀúÀå °ø°£ È®º¸
+		int cnt = s.nextInt(); // ë°ì´í„°ì˜ ì €ì¥ ê³µê°„ í™•ë³´
 		
 		stack = new int[cnt];
 		
-		for(int i = 0 ; i < cnt ; i++){ // cnt ¸¸Å­ ¹İº¹ÇÒ ¼ö ÀÖµµ·Ï for¹® »ç¿ë
+		for(int i = 0 ; i < cnt ; i++){ // cnt ë§Œí¼ ë°˜ë³µí•  ìˆ˜ ìˆë„ë¡ forë¬¸ ì‚¬ìš©
 		    String a = s.next();
 		    
-		    switch(a){ // switch-case¹® ½ÃÀÛ
+		    switch(a){ // switch-caseë¬¸ ì‹œì‘
 		    case "push":
 				push(s.nextInt());
 				break;
@@ -35,18 +35,18 @@ public class Main { // Å¬·¡½º ½ÃÀÛ
 			case "top":
 				sb.append(top()).append('\n');
 				break;
-		    } // switch-case¹® Á¾·á
-		} // for¹® Á¾·á
+		    } // switch-caseë¬¸ ì¢…ë£Œ
+		} // forë¬¸ ì¢…ë£Œ
 		System.out.println(sb);
-	} //¸ŞÀÎ Å¬·¡½º Á¾·á
+	} //ë©”ì¸ í´ë˜ìŠ¤ ì¢…ë£Œ
 	
-	// µ¥ÀÌÅÍ »ğÀÔ
+	// ë°ì´í„° ì‚½ì…
 	public static void push(int X) {
 		stack[size] = X;
 		size++;
 	}
     
-    // µ¥ÀÌÅÍ »èÁ¦
+    // ë°ì´í„° ì‚­ì œ
 	public static int pop() {
 		if(size == 0) {
 			return -1;
@@ -59,12 +59,12 @@ public class Main { // Å¬·¡½º ½ÃÀÛ
 		}
 	}
     
-    // µ¥ÀÌÅÍ °³¼ö
+    // ë°ì´í„° ê°œìˆ˜
 	public static int size() {
 		return size;
 	}
 	
-	// µ¥ÀÌÅÍ ¿©ºÎ
+	// ë°ì´í„° ì—¬ë¶€
 	public static int empty() {
 		if(size == 0) {
 			return 1;
@@ -74,7 +74,7 @@ public class Main { // Å¬·¡½º ½ÃÀÛ
 		}
 	}
     
-    // °¡Àå À§ÀÇ µ¥ÀÌÅÍ
+    // ê°€ì¥ ìœ„ì˜ ë°ì´í„°
 	public static int top() {
 		if(size == 0) {
 			return -1;
@@ -83,4 +83,4 @@ public class Main { // Å¬·¡½º ½ÃÀÛ
 			return stack[size - 1];
 		}
 	}
-}//Å¬·¡½º Á¾·á
+}//í´ë˜ìŠ¤ ì¢…ë£Œ
