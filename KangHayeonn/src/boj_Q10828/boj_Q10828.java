@@ -1,4 +1,4 @@
-// ½ºÅÃ (¹éÁØ 10828¹ø)
+// ìŠ¤íƒ (ë°±ì¤€ 10828ë²ˆ)
 package boj_Q10828;
 
 import java.util.Scanner;
