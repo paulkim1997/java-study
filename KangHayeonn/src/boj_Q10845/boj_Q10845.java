@@ -1,4 +1,4 @@
-// ลฅ (น้มุ 10845น๘)
+// ํ (๋ฐฑ์ค€ 10845๋ฒ)
 package boj_Q10845;
 
 import java.util.Deque;
