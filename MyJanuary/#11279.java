@@ -1,23 +1,23 @@
 import java.io.*;
 import java.util.*;
 
-public class Main { // Å¬·¡½º ½ÃÀÛ
+public class Main { // í´ë˜ìŠ¤ ì‹œì‘
 	   static BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 	   
 	   static BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(System.out));
 	   
 	   static StringBuilder sb=new StringBuilder();
 	   
-	   static int N; // ¿¬»êÀÇ °³¼ö
+	   static int N; // ì—°ì‚°ì˜ ê°œìˆ˜
 	   
-	   static int heap[] = new int[100001]; // 100001À» ³Ñ¾î°¡Áö ¾Êµµ·Ï ¼³Á¤ÇÔ.
+	   static int heap[] = new int[100001]; // 100001ì„ ë„˜ì–´ê°€ì§€ ì•Šë„ë¡ ì„¤ì •í•¨.
 	   
-	   static int top = 0; // root Æ®¸®
+	   static int top = 0; // root íŠ¸ë¦¬
 	   
-	   public static void main(String args[]) throws Exception { // ¸ŞÀÎ Å¬·¡½º ½ÃÀÛ
+	   public static void main(String args[]) throws Exception { // ë©”ì¸ í´ë˜ìŠ¤ ì‹œì‘
 		   N=Integer.parseInt(br.readLine());
 		   
-		   for(int i = 0; i < N; i++) { // for¹® ½ÃÀÛ
+		   for(int i = 0; i < N; i++) { // forë¬¸ ì‹œì‘
 			   int num=Integer.parseInt(br.readLine());
 			   
 			   if(num == 0) { 
@@ -27,18 +27,18 @@ public class Main { // Å¬·¡½º ½ÃÀÛ
 			   else {
 				   push(num);
 			   }
-		   } // for¹® ³¡
+		   } // forë¬¸ ë
 		   System.out.println(sb);
-	   } // ¸ŞÀÎ Å¬·¡½º ³¡
+	   } // ë©”ì¸ í´ë˜ìŠ¤ ë
 	   
-	   // µ¥ÀÌÅÍÀÇ ºñ±³
+	   // ë°ì´í„°ì˜ ë¹„êµ
 	   static void swap(int a, int b) {
 		   int temp=heap[a];
 		   heap[a]=heap[b];
 		   heap[b]=temp;
 	   }
 	   
-	   // µ¥ÀÌÅÍ ÀÔ·Â
+	   // ë°ì´í„° ì…ë ¥
 	   static void push(int n) {
 		   heap[++top]=n;
 		   
@@ -50,13 +50,13 @@ public class Main { // Å¬·¡½º ½ÃÀÛ
 		   }
 	   }
 	   
-	   // µ¥ÀÌÅÍÀÇ »èÁ¦
+	   // ë°ì´í„°ì˜ ì‚­ì œ
 	   static int pop() {
 		   int result=heap[1];
 
 		   heap[1]=heap[top];
 		   heap[top--]=0;
-		   for(int i = 1; i * 2 <=top;) { // for¹® ½ÃÀÛ
+		   for(int i = 1; i * 2 <=top;) { // forë¬¸ ì‹œì‘
 			   if(heap[i]>heap[i*2]&&heap[i]>heap[i*2+1]) break;
 			   else if(heap[i*2]>heap[i*2+1]) {
 				   swap(i, i*2);
@@ -66,7 +66,7 @@ public class Main { // Å¬·¡½º ½ÃÀÛ
 				   swap(i, i*2+1);
 				   i=i*2+1;
 			   }
-		   } // for¹® ³¡
+		   } // forë¬¸ ë
 		   return result;
 	   }
-	} // Å¬·¡½º ³¡
+	} // í´ë˜ìŠ¤ ë
