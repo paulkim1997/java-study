@@ -1,3 +1,4 @@
+// 스택 (백준 10828번)
 package boj_Q10828;
 
 import java.util.Scanner;
