@@ -8,12 +8,12 @@ Code, Compile, Run and Debug online from anywhere in world.
 *******************************************************************************/
 import java.util.Scanner;
 
-class Queue{ // Queue Å¬·¡½º
-    public int[] queue; // µ¥ÀÌÅÍ¸¦ ´ãÀ» Å¥ ¼±¾ğ
-    public int f_pointer = 0; // Å¥ÀÇ ¾ÕÀ» °¡¸®Å³ ÇÔ¼ö
-    public int b_pointer = -1; // Å¥ÀÇ µÚ¸¦ °¡¸®Å³ ÇÔ¼ö
+class Queue{ // Queue í´ë˜ìŠ¤
+    public int[] queue; // ë°ì´í„°ë¥¼ ë‹´ì„ í ì„ ì–¸
+    public int f_pointer = 0; // íì˜ ì•ì„ ê°€ë¦¬í‚¬ í•¨ìˆ˜
+    public int b_pointer = -1; // íì˜ ë’¤ë¥¼ ê°€ë¦¬í‚¬ í•¨ìˆ˜
 	
-	Queue(){ // ±âº» Å¬·¡½º
+	Queue(){ // ê¸°ë³¸ í´ë˜ìŠ¤
 		
 	}
 	
@@ -21,12 +21,12 @@ class Queue{ // Queue Å¬·¡½º
 		queue = new int[number];
 	}
 	
-	// µ¥ÀÌÅÍ »ğÀÔ
+	// ë°ì´í„° ì‚½ì…
 	public void push(int x) {
 		queue[++b_pointer] = x;
 	}
 	
-	// µ¥ÀÌÅÍ »èÁ¦
+	// ë°ì´í„° ì‚­ì œ
 	public int  pop() {
 		if (empty() == 0)
 			return -1;
@@ -34,12 +34,12 @@ class Queue{ // Queue Å¬·¡½º
 			return queue[f_pointer++];
 	}
 	
-	// µ¥ÀÌÅÍ °³¼ö
+	// ë°ì´í„° ê°œìˆ˜
 	public int size() {
 		return b_pointer - f_pointer + 1;
 	}
 	
-	// µ¥ÀÌÅÍ ¿©ºÎ
+	// ë°ì´í„° ì—¬ë¶€
 	public int empty() {
 		if (size()==0)
 			return 1;
@@ -48,7 +48,7 @@ class Queue{ // Queue Å¬·¡½º
 	}
 	
 
-	// °¡Àå ¾ÕÀÇ µ¥ÀÌÅÍ
+	// ê°€ì¥ ì•ì˜ ë°ì´í„°
 	public int front() {
 		if (empty() == 0)
 			return -1;
@@ -56,28 +56,28 @@ class Queue{ // Queue Å¬·¡½º
 			return queue[f_pointer];
 	}
 	
-	// °¡Àå µÚÀÇ µ¥ÀÌÅÍ
+	// ê°€ì¥ ë’¤ì˜ ë°ì´í„°
 	public int back() {
 		if (empty() == 0)
 			return -1;
 		else
 			return queue[b_pointer];
 	}
-} // Queue Å¬·¡½º Á¾·á
+} // Queue í´ë˜ìŠ¤ ì¢…ë£Œ
 
-public class Main { // Å¬·¡½º ½ÃÀÛ
+public class Main { // í´ë˜ìŠ¤ ì‹œì‘
     
-	public static void main(String[] args) { // ¸ŞÀÎ Å¬·¡½º ½ÃÀÛ
+	public static void main(String[] args) { // ë©”ì¸ í´ë˜ìŠ¤ ì‹œì‘
 	    Scanner s = new Scanner(System.in);
 	    
-		int number = s.nextInt(); // µ¥ÀÌÅÍÀÇ ÀúÀå °ø°£ È®º¸
+		int number = s.nextInt(); // ë°ì´í„°ì˜ ì €ì¥ ê³µê°„ í™•ë³´
 		
 		Queue queue = new Queue(number);
 		
-		for(int i = 0 ; i < number ; i++){ // cnt ¸¸Å­ ¹İº¹ÇÒ ¼ö ÀÖµµ·Ï for¹® »ç¿ë
+		for(int i = 0 ; i < number ; i++){ // cnt ë§Œí¼ ë°˜ë³µí•  ìˆ˜ ìˆë„ë¡ forë¬¸ ì‚¬ìš©
 		    String a = s.next();
 		    
-		    switch(a){ // switch-case¹® ½ÃÀÛ
+		    switch(a){ // switch-caseë¬¸ ì‹œì‘
 		    case "push":
 		    	int x = s.nextInt();
 				queue.push(x);
@@ -102,9 +102,9 @@ public class Main { // Å¬·¡½º ½ÃÀÛ
 			case "back":
 				System.out.println(queue.back());
 				break;
-		    } // switch-case¹® Á¾·á
-		} // for¹® Á¾·á
-	} //¸ŞÀÎ Å¬·¡½º Á¾·á
-}//Å¬·¡½º Á¾·á
+		    } // switch-caseë¬¸ ì¢…ë£Œ
+		} // forë¬¸ ì¢…ë£Œ
+	} //ë©”ì¸ í´ë˜ìŠ¤ ì¢…ë£Œ
+}//í´ë˜ìŠ¤ ì¢…ë£Œ
 
  
