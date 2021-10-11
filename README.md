@@ -27,7 +27,7 @@
 |3주차|완전 탐색| [지연](https://github.com/yeon-log) |
 |4주차|이분 탐색| [오민영](https://github.com/MyJanuary) |
 |5주차|투 포인터| [염연웅](https://github.com/bingoring) |
-|6주차|그래프와 탐색| [강하연]((https://github.com/KangHayeonn)) |
+|6주차|그래프와 탐색| [강하연](https://github.com/KangHayeonn) |
 |7주차|DFS & BFS| [김성수](https://github.com/paulkim1997) |
 |8주차|트리| [지연](https://github.com/yeon-log) |
 |9주차|위상 정렬| [오민영](https://github.com/MyJanuary) |
