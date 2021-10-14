@@ -29,7 +29,7 @@
 |5주차|순열과 조합 & 재귀 & 백트래킹| [염연웅](https://github.com/bingoring) |
 |6주차|그래프와 탐색| [강하연](https://github.com/KangHayeonn) |
 |7주차|DFS & BFS| [김성수](https://github.com/paulkim1997) |
-|8주차|트리| [지연](https://github.com/yeon-log) |
+|8주차|트리| [심지연](https://github.com/yeon-log) |
 |9주차|문자열 & 그리디 & 힙| [오민영](https://github.com/MyJanuary) |
 |10주차|최단 경로| [염연웅](https://github.com/bingoring) |
 |11주차|동적 계획법| [강하연](https://github.com/KangHayeonn) |
