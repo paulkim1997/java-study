@@ -24,7 +24,7 @@
 |----|----|----|
 |1주차|자료구조, 입출력| -- |
 |2주차|정렬| [김성수](https://github.com/paulkim1997) |
-|3주차|완전 탐색| [지연](https://github.com/yeon-log) |
+|3주차|완전 탐색| [심지연](https://github.com/yeon-log) |
 |4주차|이분 탐색 & 투 포인터| [오민영](https://github.com/MyJanuary) |
 |5주차|순열과 조합 & 재귀 & 백트래킹| [염연웅](https://github.com/bingoring) |
 |6주차|그래프와 탐색| [강하연](https://github.com/KangHayeonn) |
