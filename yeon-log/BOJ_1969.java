@@ -45,18 +45,13 @@ public class BOJ_1969 {
             }
 
             // Hamming Distance 의 합이 최소가되는 문자열 출력 위해 체크
-            if(idx== 0) res += 'A';
-            else if(idx == 1) res += 'C';
-            else if(idx == 2) res += 'G';
-            else res += 'T';
-
-            /* switch (idx){
-                case 0: res += 'A';
-                case 1: res += 'C';
-                case 2: res += 'G';
-                case 3: res += 'T';
+            switch (idx){
+                case 0: { res += 'A'; break;}
+                case 1: { res += 'C'; break;}
+                case 2: { res += 'G'; break;}
+                case 3: { res += 'T'; break;}
                 default: break;
-            } */
+            }
         }
 
         // Hamming Distance 의 합, 문자가 다를 경우 체크
