@@ -22,7 +22,7 @@ public class BOJ_2776 {
         int T = Integer.parseInt(br.readLine()); // tc
 
         while(T != 0) {
-            hs.clear(); // tc 가 커지면 시간초과나므로
+            hs.clear(); // tc 가 2이상일때 문제되므로
             T--;
             int N = Integer.parseInt(br.readLine()); // 수첩1 정수 개수
             String [] note = br.readLine().split(" ");
