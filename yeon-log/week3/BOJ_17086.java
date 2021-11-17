@@ -8,7 +8,7 @@ import static java.lang.Math.max;
 
 public class BOJ_17086 {
 
-    // 인접한 8방향 (대각선 포함) -> 좌,우,상,하,우상,우하,좌상,좌하
+    // 인접한 8방향 (대각선 포함) -> 좌,우,하,상,우하,우상,좌하,좌상
     private static int[] dx = {-1, 1, 0, 0, 1, 1, -1, -1};
     private static int[] dy = {0, 0, 1, -1, 1, -1, 1, -1};
 
